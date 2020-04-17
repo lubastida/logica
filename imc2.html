@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>IMC - Versão 2.0</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+  	<ul>
+    <h1>IMC - Versão 2.0</h1>
+   <script>
+    function pulaLinha() {
+        document.write ("<br>");
+        document.write ("<br>");
+    }
+    function calculaImc(peso, altura) {
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+    function mostra(message) {
+        document.write(message);
+    }
+    function calculaImcg(alturaInformada, pesoInformado) {
+        return pesoInformado/(alturaInformada * alturaInformada);
+    }
+    var imcLu = calculaImc(52,1.63);
+    var imcRud = calculaImc(89,1.92);
+    mostra('imc da Lú é: ' + imcLu);
+    pulaLinha()
+    mostra('imc do Rud é: '+ imcRud);
+    pulaLinha()
+
+   var alturaInformada = prompt ("Informe sua altura");
+   var pesoInformado = prompt ("Informe seu peso");
+   mostra ("IMC é: " + calculaImcg (alturaInformada, pesoInformado));
+
+
+   </script>
+  </body>
+</html>

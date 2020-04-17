@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Consumo</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+  	<ul>
+    <h1>Álcool ou Gasolina?</h1>
+   <script>
+    function pulaLinha () {
+        document.write ("<br>")
+        document.write ("<br>");
+    }
+    function mostra (frase) {
+        document.write (frase);
+        pulaLinha ();
+    }
+    var tanque = 40; 
+    var caminhoGasolina = 480;
+    var caminhoAlcool = 300;
+   document.write ("Consumo com Gasolina = " + Math.round (caminhoGasolina/tanque));
+   pulaLinha ();
+   document.write ("Consumo com Alcool = " + Math.round (caminhoAlcool/tanque));
+   pulaLinha ();
+   mostra ("desta forma, calculamos o consumo de cada tipo de combustível");
+   mostra ("com objetivo em dar transparência ao consumidor");
+   </script>
+  </body>
+</html>
