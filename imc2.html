@@ -29,9 +29,10 @@
     mostra('imc do Rud é: '+ imcRud);
     pulaLinha()
 
-   var alturaInformada = prompt ("Informe sua altura");
-   var pesoInformado = prompt ("Informe seu peso");
-   mostra ("IMC é: " + calculaImcg (alturaInformada, pesoInformado));
+   var nome = prompt ("Informe seu nome")
+   var alturaInformada = prompt (nome + ", Informe sua altura");
+   var pesoInformado = prompt (nome + " ,Informe seu peso");
+   mostra (nome + " seu IMC é: " + calculaImcg (alturaInformada, pesoInformado));
 
 
    </script>
