@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Portal de acesso</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+  	<ul>
+    <h1>Acesso</h1>
+   <script>
+    function pulaLinha() {
+        document.write ("<br>");
+        document.write ("<br>");
+    }
+       function mostra(message) {
+        document.write(message);
+    }
+       
+   var login ='luciana.bastida';
+   var senha = 'amora2020';
+   var maxTentativa = 3;
+   var tentativaAtual = 1;   
+
+   while(tentativaAtual <= maxTentativa){
+    var loginDig = prompt ('Informe seu login');
+    var senhaDig = prompt ('Informe sua senha');
+            if(login==loginDig && senha==senhaDig){
+               mostra ('Acesso Liberado!');
+               tentativaAtual = maxTentativa;
+            } else {
+                if(tentativaAtual==3){
+                    alert('número de tentativas permitidas foi ultrapassado, tente mais tarde.');
+                    mostra ('Acesso Negado!');
+                    } else {
+                      alert('login e/ou senha inválida, tente novamente.');
+                    }
+                }
+                tentativaAtual = tentativaAtual + 1;
+            } 
+   </script>
+  </body>
+</html>

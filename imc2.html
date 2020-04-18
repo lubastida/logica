@@ -22,18 +22,29 @@
     function calculaImcg(alturaInformada, pesoInformado) {
         return pesoInformado/(alturaInformada * alturaInformada);
     }
-    var imcLu = calculaImc(52,1.63);
-    var imcRud = calculaImc(89,1.92);
-    mostra('imc da Lú é: ' + imcLu);
-    pulaLinha()
-    mostra('imc do Rud é: '+ imcRud);
-    pulaLinha()
-
+    //var imcLu = calculaImc(52,1.63);
+    //var imcRud = calculaImc(89,1.92);
+    //mostra('imc da Lú é: ' + imcLu);
+    //pulaLinha()
+    //mostra('imc do Rud é: '+ imcRud);
+   // pulaLinha()
    var nome = prompt ("Informe seu nome")
    var alturaInformada = prompt (nome + ", Informe sua altura");
    var pesoInformado = prompt (nome + " ,Informe seu peso");
    mostra (nome + " seu IMC é: " + calculaImcg (alturaInformada, pesoInformado));
-
+   pulaLinha()
+   if (calculaImcg(alturaInformada, pesoInformado)<18.5) {
+        mostra ('Peso abaixo do recomendado')
+    }
+    if (calculaImcg(alturaInformada, pesoInformado)>=18.5 && calculaImcg(alturaInformada, pesoInformado)<=35) {
+            mostra ('Seu IMC está excelente! você está saudável')
+        } else {
+          var contador = 1
+          while (contador <=3) {
+            mostra ('Peso acima do recomendado!'+'<br>');
+            contador = contador+1
+          }
+    }
 
    </script>
   </body>
