@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Idades</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+  	<ul>
+    <h1>Média das Idades 2.0</h1>
+      <input/>
+      <button>Insira quantidade de pessoas na família</button>
+
+   <script>
+
+    function mostra(message) {
+        document.write(message);
+    }
+   var input = document.querySelector("input");
+   var totalIdades = 0;  
+
+   function Idade(){
+        for (var numero = 1;numero <= input.value;numero++){
+        var idadeFamiliar = parseInt (prompt ('informe a idade'));
+        totalIdades = totalIdades + idadeFamiliar;
+        }    
+        if (numero = input){
+                var mediaTotal = totalIdades/(input.value);
+                mostra ("Média das idades é: " + mediaTotal);
+            }        
+    } 
+         
+   var button = document.querySelector("button");
+   button.onclick = Idade
+    
+   </script>
+  </body>
+</html>
