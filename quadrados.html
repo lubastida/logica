@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Animações</title>
+    <canvas width="600" height="400"></canvas>
+
+   <script>
+      function desenhaQuadrado (x,y,cor){
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = cor;
+        pincel.fillRect(x,y,50,50);
+        pincel.strokeStyle = 'black';
+        pincel.strokeRect(x,y,50,50);
+       }
+
+       for (x=0; x<600; x=x+50){
+         var y=50;
+        desenhaQuadrado(x,0,'green');
+        desenhaQuadrado(x,y,'pink');
+      }
+          
+   </script>
+ </html>

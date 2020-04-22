@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Animações</title>
+    <canvas width="600" height="400"></canvas>
+
+   <script>
+       var tela = document.querySelector('canvas');
+       var pincel = tela.getContext('2d');
+    
+       pincel.fillStyle = 'red';
+       pincel.beginPath();
+       pincel.moveTo(75,40);
+       pincel.bezierCurveTo(75,37,70,25,50,25);
+       pincel.bezierCurveTo(20,25,20,62.5,20,62.5);
+       pincel.bezierCurveTo(20,80,40,102,75,120);
+       pincel.bezierCurveTo(110,102,130,80,130,62.5);
+       pincel.bezierCurveTo(130,62.5,130,25,100,25);
+       pincel.bezierCurveTo(85,25,75,37,75,40);
+       pincel.fill()
+       pincel.textAlign('love u');
+   </script>
+ </html>
